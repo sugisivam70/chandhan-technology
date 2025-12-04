@@ -1,0 +1,1033 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="icon" href="img/logo/Screenshot 2025-09-24 103228.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "poppins", sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .service-hero-content h2 span.letter,
+    .service-hero-content h1 span.letter {
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: fadeInUp 0.6s ease-out forwards;
+      display: inline-block;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .service-hero {
+      background-image: url(img/10506876.jpg);
+      background-size: cover;
+
+      object-fit: contain;
+      background-position: center;
+      padding: 100px 30px;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      text-align: left;
+    }
+
+    .service-hero-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-hero-content h2 {
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .service-hero-content h2 span {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .bg-text {
+      font-size: 100px;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1;
+      bottom: 30px;
+      left: 30px;
+      color: #0f67f4;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      font-family: "poppins", sans-serif;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero .highlight {
+      color: #1e73e8;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn.primary {
+      background: #1e73e8;
+      color: #fff;
+    }
+
+    .btn.primary:hover {
+      background: #125bb5;
+    }
+
+    .btn.secondary {
+      background: #f4f4f4;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    .btn.secondary:hover {
+      background: #e6e6e6;
+    }
+
+    /* Rating */
+    .rating {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .rating p {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .rating a {
+      color: #1e73e8;
+      text-decoration: none;
+    }
+
+    /* Stats Section */
+    .hero-stats {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      font-family: "poppins", sans-serif;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    .stat {
+      background: #f9f9f9;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .stat img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .stat h2 {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .stat p {
+      font-size: 0.95rem;
+      color: #000000;
+    }
+
+    /* Color Variations */
+    .stat.blue {
+      background: #000000;
+      color: #ffffff;
+      font-size: 2rem;
+    }
+    .stat.blue p {
+      color: #d4d4d4;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .stat.blue h2 {
+      color: #1f61f0;
+      font-size: 2rem;
+    }
+
+    .stat.green {
+      background: #f0fdf4;
+      color: #111;
+      border: 1px solid #cce8d8;
+    }
+
+    .stat.lightgreen {
+      background: #d9f99d;
+      color: #111;
+    }
+
+    /* machines */
+
+    .machine-sec {
+      padding: 60px 20px;
+      background: #fff;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .machine-sec h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .machine-sec h2 span {
+      color: #e60012; /* Red Plus */
+      margin-left: 10px;
+    }
+
+    /* Grid Layout */
+    .machine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Machine Cards */
+    .machine-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .machine-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .machine-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    /* Wide cards (side by side image + text) */
+    .machine-card.wide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      grid-column: span 2;
+    }
+
+    .machine-card.wide .machine-info {
+      flex: 1;
+    }
+
+    .machine-card.wide .machine-img {
+      flex: 1;
+    }
+
+    .machine-card.wide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .machine-card ul {
+      list-style: disc;
+      margin: 0 0 15px 20px;
+      text-align: left;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    /* Explore Button */
+    .explore-btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .explore-btn:hover {
+      background: #7e7e7e;
+    }
+
+    .work-section {
+      margin-top: 2rem;
+      padding-bottom: 60px;
+    }
+    .work-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .work-header h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .work-header h2 span {
+      color: #3fa9f5;
+    }
+
+    .work-header p {
+      font-size: 1rem;
+      color: #525252;
+      margin-top: 10px;
+    }
+
+    /* Grid */
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 250px;
+      gap: 20px;
+      padding: 20px 60px 60px;
+    }
+
+    /* Card */
+    .work-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .work-card:hover img {
+      transform: scale(1.1);
+      filter: brightness(0.7);
+    }
+
+    /* Info */
+    .work-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    .work-info h3 {
+      font-size: 1.1rem;
+      margin: 5px 0 0;
+      color: #ffffff;
+    }
+    .tag {
+      color: #fff;
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      background: rgba(0, 149, 255, 0.8);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    /* CTA button */
+    .cta-btn {
+      background: #0095ff;
+      border: none;
+      padding: 12px 20px;
+      color: #fff;
+      font-size: 0.9rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #2a7fb6;
+    }
+
+    /* Special card sizing */
+    .large {
+      grid-row: span 2;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .work-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .wide {
+        grid-column: span 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .work-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+      .large {
+        grid-row: span 1;
+      }
+    }
+  </style>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="img/logo/Screenshot 2025-09-24 103609.png" alt="" />
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="precision.html">Precision</a>
+        <a href="Project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://wa.me/8123638613?text=Hi%20Genius%20Tech!%20I%20am%20interested%20in%20your%20VMC%20solutions. Can%20you%20provide%20more%20details?"
+          class="btn-yellow"
+          >Enquiry ➜</a
+        >
+      </nav>
+    </header>
+
+    <section class="service-hero" id="services">
+      <div class="service-hero-content">
+        <h2>We provide <br /><span>Best Quality</span></h2>
+        <h1 class="bg-text">Project</h1>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          The Future of CNC Manufacturing with <br />
+          <span class="highlight">Cutting-Edge Technology</span>
+        </h1>
+        <p>
+          Genius Tech delivers precision, reliability, and efficiency —
+          empowering industries with world-class VMC machining solutions.
+        </p>
+
+        <div class="buttons">
+          <a href="#services" class="btn primary">Get Started</a>
+          <a href="#contact" class="btn secondary">Request a Quote</a>
+        </div>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span>5.0</span>
+          <p>Trusted by 100+ <a href="#clients">manufacturers worldwide</a></p>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <img src="img/13190.jpg" alt="CNC Projects" />
+        </div>
+        <div class="stat blue">
+          <h2>100+</h2>
+          <p>Esteemed Clients & Partners</p>
+        </div>
+        <div class="stat green">
+          <h2>1950+</h2>
+          <p>
+            Total VMC Projects <br /><small>Growth of 120+ this year</small>
+          </p>
+        </div>
+        <div class="stat lightgreen">
+          <h2>6+</h2>
+          <p>Years of Dedicated WIRECUT Molding & VMC Excellence</p>
+        </div>
+        <div class="stat blue">
+          <p>
+            Achieve Precision Engineering <br />
+            and Boost Productivity with Genius Tech.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="machine-sec">
+      <h2>Explore the Machines</h2>
+      <div class="machine-grid">
+        <!-- Product 1 -->
+
+        <!-- Product 3 -->
+
+        <!-- Product 4 -->
+        <div class="machine-card">
+          <img
+            src="img/machines/grind1-Photoroom.png"
+            alt="PSG 4080AHD Surface Grinder"
+          />
+
+          <div class="machine-info">
+            <h3>PSG 4080AHD Surface Grinder</h3>
+            <ul>
+              <li>
+                Designed for high-precision surface finishing on steel, cast
+                iron, and non-ferrous materials
+              </li>
+              <li>
+                Widely used in die & mold making, automotive, and heavy
+                engineering
+              </li>
+              <li>Robust cast iron structure ensures rigidity and stability</li>
+              <li>
+                Spindle supported by super-precision angular contact ball
+                bearings
+              </li>
+              <li>Hardened and precision-ground lead screws</li>
+              <li>
+                Hydraulic table with automatic continuous lubrication on
+                guideways
+              </li>
+              <li>
+                Ensures dimensional accuracy and high-quality surface finishes
+              </li>
+            </ul>
+          </div>
+
+          <a href="#" class="explore-btn">Explore ➜</a>
+        </div>
+
+        <div class="machine-card">
+          <img src="img/machines/Picture4.png" alt="CNC Wire Cut EDM Machine" />
+
+          <div class="machine-info">
+            <h3>CNC Wire Cut EDM Machine</h3>
+            <ul>
+              <li>
+                Precision cutting tool using a thin electrically charged wire
+              </li>
+              <li>Works on the EDM principle with dielectric fluid flushing</li>
+              <li>
+                Ideal for machining hard materials like die steel, titanium, and
+                tungsten
+              </li>
+              <li>
+                Capable of producing intricate shapes and contours with high
+                accuracy
+              </li>
+              <li>
+                Equipped with linear motor drives and linear scales for
+                precision
+              </li>
+              <li>Manufacturer: Navanith Enterprises</li>
+            </ul>
+          </div>
+
+          <a href="#" class="explore-btn">Explore ➜</a>
+        </div>
+
+        <div class="machine-card">
+          <img src="img/machines/MILLING.png" alt="Manual Surface Grinder" />
+
+          <div class="machine-info">
+            <h3>BMT Manual Surface Grinder</h3>
+            <ul>
+              <li>
+                Ideal for metal fabrication, welding, and designing processes
+              </li>
+              <li>
+                Sharpens and smooths rough surfaces of instruments & components
+              </li>
+              <li>
+                Horizontal bed construction for reliable grinding operations
+              </li>
+              <li>
+                Features high tensile strength, corrosion resistance, and
+                dimensional accuracy
+              </li>
+              <li>Grinding Capacity: 225 × 500 mm</li>
+              <li>Working Table Surface: 500 × 225 mm</li>
+              <li>Manufacturer: BMT Engineers, Faridabad, India</li>
+            </ul>
+          </div>
+
+          <a href="#" class="explore-btn">Explore ➜</a>
+        </div>
+
+        <div class="machine-card">
+          <img
+            src="img/machines/Dk7745-Fast-Speed-CNC-EDM-Wire-Cutting-Machine-for-Metal.jpg"
+            alt="DK7745 CNC Wire Cut EDM Machine"
+          />
+
+          <h3>DK7745 Fast-Speed CNC Wire Cut EDM</h3>
+
+          <div class="machine-info">
+            <h3>Model: DK7745 Wire Cut EDM</h3>
+            <ul>
+              <li>
+                Equipped with ball screws for X & Y table movement and
+                fine-pitch screws for U & V axes
+              </li>
+              <li>Uses stepper motors for precise control</li>
+              <li>
+                Cutting efficiency: 7000–8000 mm²/hour with energy saving
+                ~0.85°/h
+              </li>
+              <li>Reusable molybdenum wire reduces running costs</li>
+              <li>Working fluid: water-based emulsion for stable cutting</li>
+              <li>
+                Applications: molds, aerospace engine parts, tool making &
+                detailed designs
+              </li>
+            </ul>
+          </div>
+
+          <a href="#" class="explore-btn">Explore ➜</a>
+        </div>
+
+        <div class="machine-card">
+          <img
+            src="img/machines/c-frame-obi-non-inclinable-power-press-bsp-250-500x500.webp"
+            alt="C-Type Power Press Machine"
+          />
+
+          <div class="machine-info">
+            <h3>C–Type Power Press Machine</h3>
+            <ul>
+              <li>
+                Designed with a rigid "C" shaped frame for easy front access
+              </li>
+              <li>
+                Suitable for punching, bending, forming, cutting, and shearing
+              </li>
+              <li>Equipped with a high-performance motor and sturdy frame</li>
+              <li>
+                Optional clutch/brake system & hydraulics for smooth operation
+              </li>
+              <li>Available in multiple capacities: 30, 50, 75, 100 ton</li>
+              <li>
+                Adjustable stroke length & variable speed control for
+                versatility
+              </li>
+              <li>
+                Built with high-grade materials for durability & low maintenance
+              </li>
+            </ul>
+          </div>
+
+          <a href="#" class="explore-btn">Explore ➜</a>
+        </div>
+
+        <!-- Product 5 -->
+      </div>
+    </section>
+
+    <section class="work-section">
+      <div class="work-header">
+        <h2>Shaping <span>Innovation with Precision</span></h2>
+        <p>
+          At Genius Tech, we specialize in delivering world-class VMC machining
+          solutions, ensuring accuracy, reliability, and efficiency for every
+          project we undertake.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <!-- Card 1 -->
+        <div class="work-card">
+          <img
+            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_08ed03c7.jpg"
+            alt="VMC Milling"
+          />
+          <div class="work-info">
+            <span class="tag">Milling</span>
+            <h3>High-Accuracy VMC Milling</h3>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="work-card">
+          <img
+            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_40c1f467.jpg"
+            alt="VMC Turning"
+          />
+          <div class="work-info">
+            <span class="tag">Turning</span>
+            <h3>Efficient VMC Turning Operations</h3>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="work-card large">
+          <img
+            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.33_42b42982.jpg"
+            alt="Assembly Solutions"
+          />
+          <div class="work-info">
+            <button class="cta-btn">Start Your Project</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="work-card">
+          <img
+            src="img/abt/metal-industry-workshop-precision-machinery-automated-production-line-robotic-arm-generated-by-ai-free-photo.jpg"
+            alt="Quality Assurance"
+          />
+          <div class="work-info">
+            <span class="tag">Quality</span>
+            <h3>Rigorous Quality Control & Inspection</h3>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="work-card wide">
+          <img
+            src="img/abt/automotive-parts-manufacturing-canada-with-precision-engineering-processes_1291600-47172.jpg"
+            alt="VMC Innovation"
+          />
+          <div class="work-info">
+            <span class="tag">Innovation</span>
+            <h3>Driving Tomorrow’s Manufacturing Technology</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-brand">
+          <img
+            src="img/logo/Screenshot 2025-09-24 103609.png"
+            alt="Genius Tech Logo"
+            class="logo"
+          />
+          <p>
+            Genius Technology specializes in high-precision VMC milling, and
+            press tool and Mold solutions. Delivering innovation, accuracy, and
+            reliability for global manufacturing industries.
+          </p>
+        </div>
+
+        <!-- Quick Menu -->
+        <div class="footer-links">
+          <h4>Quick Menu</h4>
+          <ul>
+            <li><a href="services.html">Vmc & Wirecut Molding</a></li>
+            <li><a href="precision.html">Press & Moldtools Making </a></li>
+            <li><a href="precision.html">Tool Room Activities</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="contact.html">Quality Policy</a></li>
+            <li><a href="contact.html">Certifications</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a
+              href="https://in.linkedin.com/in/abdul-lashkari-8798a7129?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile"
+              title="LinkedIn target="
+              _blank
+              rel="noopener"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/1JmvB4UV7W/"
+              title="Facebook  target="
+              _blank
+              rel="noopener    "
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/genius.technology_?igsh=MTd4c3Y5YzJkZmF1Mg=="
+              title="Instagram target="
+              _blank
+              rel="noopener"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/8123638613?text=Hi%20Genius%20Tech!%20I%20am%20interested%20in%20your%20VMC%20solutions. Can%20you%20provide%20more%20details? target="
+              _blank
+              rel="noopener"
+              title="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <a
+              href="https://www.google.com/maps/place/genius+technologies/@13.0064202,77.4947271,808m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae3d001422d6f5:0x357eb3ad3a09bf37!8m2!3d13.006415!4d77.497302!16s%2Fg%2F11y013t21p?authuser=0&entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+             Genius-technology 195, Andrahalli Main Rd, Peenya 2nd Stage, Shushruti Nagar, Bengaluru, Karnataka 560091
+            </a>
+          </p>
+          <p>
+            <a href="tel:+81236 38613">
+              <i class="fas fa-phone-alt"></i> +91 +91 81236 38613
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@genius-technology.co.in&su=Product%20Enquiry%20from%20Website&body=Hello%20Genius%20Tech%2C%0A%0AI%20am%20interested%20in%20your%20products.%20Please%20share%20more%20details%20with%20me.%0A%0ARegards%2C%0A[Your%20Name] "
+              rel="noopener"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i> admin@genius-technology.co.in
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Copyright 2025. Genius Tech CNC. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Service Hero h2 animation
+        const serviceHeroH2 = document.querySelector(
+          ".service-hero-content h2"
+        );
+        if (serviceHeroH2) {
+          // Split text into spans if not already done
+          if (!serviceHeroH2.querySelector("span.letter")) {
+            const html = serviceHeroH2.innerHTML;
+            // Split by <br> and animate each line
+            serviceHeroH2.innerHTML = "";
+            html.split("<br>").forEach((line, lineIdx) => {
+              if (lineIdx > 0)
+                serviceHeroH2.appendChild(document.createElement("br"));
+              line
+                .replace(/<[^>]+>/g, "")
+                .split("")
+                .forEach((char, i) => {
+                  const span = document.createElement("span");
+                  span.className = "letter";
+                  span.textContent = char === " " ? "\u00A0" : char;
+                  serviceHeroH2.appendChild(span);
+                });
+            });
+          }
+          serviceHeroH2.querySelectorAll("span.letter").forEach((span) => {
+            span.style.opacity = 0;
+            span.style.transform = "translateY(-30px)";
+            span.style.animation = "none";
+          });
+          const observerH2 = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                serviceHeroH2
+                  .querySelectorAll("span.letter")
+                  .forEach((span, i) => {
+                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
+                    span.style.animationDelay = i * 0.06 + "s";
+                  });
+              }
+            },
+            { threshold: 0.5 }
+          );
+          observerH2.observe(serviceHeroH2);
+        }
+
+        // Service Hero h1 animation
+        const serviceHeroH1 = document.querySelector(
+          ".service-hero-content h1"
+        );
+        if (serviceHeroH1) {
+          if (!serviceHeroH1.querySelector("span.letter")) {
+            const text = serviceHeroH1.textContent;
+            serviceHeroH1.innerHTML = "";
+            text.split("").forEach((char) => {
+              const span = document.createElement("span");
+              span.className = "letter";
+              span.textContent = char === " " ? "\u00A0" : char;
+              serviceHeroH1.appendChild(span);
+            });
+          }
+          serviceHeroH1.querySelectorAll("span.letter").forEach((span) => {
+            span.style.opacity = 0;
+            span.style.transform = "translateY(-30px)";
+            span.style.animation = "none";
+          });
+          const observerH1 = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                serviceHeroH1
+                  .querySelectorAll("span.letter")
+                  .forEach((span, i) => {
+                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
+                    span.style.animationDelay = i * 0.06 + "s";
+                  });
+              }
+            },
+            { threshold: 0.5 }
+          );
+          observerH1.observe(serviceHeroH1);
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        menuToggle.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+
+   
+    <script>
+      // ...existing code...
+
+      // Count animation for hero-stats numbers
+      document.addEventListener("DOMContentLoaded", function () {
+        function animateCount(el, target, duration = 1200) {
+          let start = 0;
+          let startTime = null;
+          target = parseInt(target, 10);
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            const progress = Math.min((ts - startTime) / duration, 1);
+            el.textContent = Math.floor(progress * (target - start) + start);
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            } else {
+              el.textContent = target;
+            }
+          }
+          requestAnimationFrame(step);
+        }
+
+        // Animate all .stat h2 numbers when .hero-stats enters viewport
+        const statsSection = document.querySelector(".hero-stats");
+        if (statsSection) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              if (entries[0].isIntersecting) {
+                statsSection
+                  .querySelectorAll(".stat h2")
+                  .forEach(function (h2) {
+                    const target = h2.textContent.replace(/\D/g, "");
+                    if (target) animateCount(h2, target);
+                  });
+                observer.disconnect();
+              }
+            },
+            { threshold: 0.3 }
+          );
+          observer.observe(statsSection);
+        }
+      });
+
+      // ...existing code...
+    </script>
+  </body>
+</html>

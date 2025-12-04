@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandhan technology</title>
+    <link rel="icon" href="img/logo/Screenshot 2025-09-24 103228.png" />
+
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      .service-hero-content h2 span.letter,
+      .service-hero-content h1 span.letter {
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: fadeInUp 0.6s ease-out forwards;
+        display: inline-block;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .service-hero {
+        background-image: url(img/10506876.jpg);
+        background-size: cover;
+
+        object-fit: contain;
+        background-position: center;
+        padding: 100px 30px;
+        position: relative;
+        overflow: hidden;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .service-hero-content {
+        max-width: 700px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .service-hero-content h2 {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+
+      .service-hero-content h2 span {
+        font-weight: 700;
+        color: #02073d;
+      }
+
+      .bg-text {
+        font-size: 100px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+        bottom: 30px;
+        left: 30px;
+        color: #0f67f4;
+      }
+
+      /* Service Section */
+      .services {
+        padding: 20px 0;
+        background: #f9f9f9;
+        text-align: center;
+        font-family: "Poppins", Arial, sans-serif;
+        background-image: url(/img/nav-logo/ChatGPT\ Image\ Jul\ 9\,\ 2025\,\ 10_51_47\ PM.png);
+      }
+
+      .section-title {
+        font-size: 42px;
+        margin-bottom: 40px;
+      }
+
+      .section-title span {
+        color: #007bff;
+      }
+
+      .service-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .service-box {
+        background: #f7f9fc;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+        flex: 1 1 280px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      .service-box i {
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+
+      .service-box h4 {
+        margin: 15px 0 10px;
+      }
+      .service-box p {
+        font-size: 0.95rem;
+        color: #6f6f6f;
+      }
+
+      .service-box.active,
+      .service-box:hover {
+        background: black;
+        color: #ffffff;
+      }
+      .service-box:hover p {
+        color: #bdbdbd;
+      }
+
+      .service-box.active i,
+      .service-box:hover i {
+        color: #007bff;
+      }
+
+      /* Hero Section */
+      .hero2 {
+        text-align: center;
+        padding: 80px 20px;
+        max-width: 1200px;
+        margin: auto;
+        font-family: "poppins", sans-serif;
+      }
+
+      .hero2 h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .hero2 .highlight2 {
+        color: #1e73e8;
+      }
+
+      .hero2 p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 25px;
+      }
+
+      /* Buttons */
+      .buttons2 {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .btn2 {
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn2.primary2 {
+        background: #1e73e8;
+        color: #fff;
+      }
+
+      .btn2.primary2:hover {
+        background: #125bb5;
+      }
+
+      .btn2.secondary2 {
+        background: #f4f4f4;
+        color: #333;
+        border: 1px solid #ddd;
+      }
+
+      .btn2.secondary2:hover {
+        background: #e6e6e6;
+      }
+
+      /* Rating */
+      .rating2 {
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #333;
+      }
+
+      .rating2 p {
+        font-size: 0.85rem;
+        color: #555;
+      }
+
+      .rating2 a {
+        color: #1e73e8;
+        text-decoration: none;
+      }
+
+      /* Stats Section */
+      .hero-stats2 {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        font-family: "poppins", sans-serif;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+
+      .stat2 {
+        background: #f9f9f9;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .stat2 img {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .stat2 h2 {
+        font-size: 2rem;
+        color: #111;
+        margin-bottom: 10px;
+      }
+
+      .stat2 p {
+        font-size: 0.95rem;
+        color: #000000;
+      }
+
+      /* Color Variations */
+      .stat2.blue2 {
+        background: #000000;
+        color: #ffffff;
+        font-size: 2rem;
+      }
+
+      .stat2.blue2 p {
+        color: #d4d4d4;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .stat2.blue2 h2 {
+        color: #1f61f0;
+        font-size: 2rem;
+      }
+
+      .stat2.green2 {
+        background: #f0fdf4;
+        color: #111;
+        border: 1px solid #cce8d8;
+      }
+
+      .stat2.lightgreen2 {
+        background: #d9f99d;
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="logo/CHANDAN_TECHNOLOGY-removebg-preview.png"
+          alt="Chandhan Technology Logo"
+        />
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#project">Projects</a>
+        <a href="#process">Process</a>
+        <a href="ourmachine.html">Our Machines</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://wa.me/8123638613?text=Hi%20Chandhan%20Technology!%20I%20am%20interested%20in%20your%20manufacturing%20solutions.%20Please%20share%20more%20details."
+          class="btn-yellow"
+          >Enquiry ➜</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <video class="bgimg" autoplay loop muted>
+        <source src="hero-vid/VN20251204_113353.mp4" type="video/mp4" />
+        Your browser does not support the video tag
+      </video>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1><span>Chandhan</span> Technology</h1>
+
+          <div class="tagline">
+            TRANSFORMING INDUSTRIES WITH OUR PRECISION PARTS
+          </div>
+        </div>
+
+        <!-- Hero Machine Image -->
+        <div class="hero-image"></div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="herofeatures">
+        <!-- Feature 1 -->
+        <div class="herofeature-card review">
+          <p>Trusted by Industries</p>
+          <div class="stars">⭐ 4.9</div>
+          <a href="#">See Client Reviews</a>
+        </div>
+
+        <!-- Feature 2 -->
+        <!-- Feature 2 -->
+        <div class="herofeature-card battery">
+          <i class="fa-solid fa-border-all icon"></i>
+          <p>Precision Milling</p>
+          <small>High-accuracy contouring & surface finishing</small>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="herofeature-card battery">
+          <i class="fa-solid fa-circle-dot icon"></i>
+          <p>Accurate Drilling</p>
+          <small>Burr-free holes with deep-drilling capability</small>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="herofeature-card battery">
+          <i class="fa-solid fa-robot icon"></i>
+          <p>Automation Ready</p>
+          <small>ATC • Probing • Tool Offset Control</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <h1 class="about-animated-text" aria-hidden="true">
+        <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+        <span>&nbsp;</span>
+      </h1>
+
+      <div class="intro">
+        <p>
+          At <strong>Chandhan Technology</strong>, we specialise in
+          high-precision <strong>VMC drilling &amp; milling</strong> —
+          delivering highly accurate vertical machining solutions for aerospace,
+          automotive, defence and industrial customers. Our focus is on process
+          stability, tight tolerances, rapid turnaround and parts that meet
+          exacting inspection standards.
+        </p>
+        <button class="cta-button" aria-label="Contact Chandhan Technology">
+          Talk to Us ↗
+        </button>
+      </div>
+
+      <div class="about-images" aria-hidden="false">
+        <img
+          src="abt img/iStock-680194864.jpg"
+          alt="Chandhan Technology team operating VMC machines"
+          loading="lazy"
+        />
+        <img
+          src="abt img/Speed-CNC-machining-hero-2048x1367-1.jpg"
+          alt="Close-up of a milled component showing precision surface finish"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="philosophy">
+        <p>
+          <strong class="highlight"
+            >From precision drilling cycles and multi-axis milling</strong
+          >
+          to fixture design, probing, and in-process inspection, our VMC
+          workflows are engineered for repeatability and low scrap rates. We
+          combine hardened tooling, optimised feeds &amp; speeds, and shop-floor
+          automation to deliver consistent results at scale.
+        </p>
+      </div>
+
+      <div class="abtwhy-container">
+        <div class="abtleft-content">
+          <h2 class="main-title">Why clients choose Chandhan Technology</h2>
+          <h5 class="subtitle">VMC Drilling &amp; Milling Advantages</h5>
+          <p class="description">
+            With 9+ years of specialised experience in vertical machining, we
+            provide CNC program optimisation, high-speed spindle capability,
+            automatic tool changers (ATC), and tight 3D inspection controls —
+            enabling complex parts with tolerances down to ±0.005 mm.
+          </p>
+          <a href="#services" class="btn" aria-label="View Chandhan services"
+            >View More</a
+          >
+        </div>
+
+        <div class="abtright-content">
+          <div class="abtfeature-box">
+            <div class="number">01.</div>
+            <h3>Drilling Precision</h3>
+            <p>
+              Multi-step drilling cycles, peck drilling and controlled coolant
+              flow for burr-free holes and exact diameters.
+            </p>
+          </div>
+
+          <div class="abtfeature-box">
+            <div class="number">02.</div>
+            <h3>Milling Accuracy</h3>
+            <p>
+              High-speed milling strategies and rigid fixturing to achieve
+              superior surface finish and repeatable geometry.
+            </p>
+          </div>
+
+          <div class="abtfeature-box">
+            <div class="number">03.</div>
+            <h3>Process Control</h3>
+            <p>
+              Tool-offset management, in-process probing and SPC-driven
+              adjustments to keep quality within tight tolerances.
+            </p>
+          </div>
+
+          <div class="abtfeature-box">
+            <div class="number">04.</div>
+            <h3>Automation Ready</h3>
+            <p>
+              ATC, pallet systems and robotic part handling options for higher
+              throughput and consistent cycle times.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-hero" id="services">
+      <div class="service-hero-content">
+        <h2>We provide <br /><span>Best Quality</span></h2>
+        <h1 class="bg-text">Services</h1>
+      </div>
+    </section>
+
+    <!-- Service Offerings -->
+    <section class="services" id="service">
+      <div class="service-container">
+        <h2 class="section-title">Our <span>Service</span> Offering</h2>
+        <div class="service-grid">
+          <div class="service-box">
+            <i class="fas fa-drafting-compass fa-2x"></i>
+            <h4>Design & Prototyping</h4>
+            <p>
+              CAD/CAM design and prototype development to turn ideas into
+              manufacturable parts.
+            </p>
+          </div>
+
+          <div class="service-box active">
+            <i class="fas fa-cogs fa-2x"></i>
+            <h4>Precision CNC Machining</h4>
+            <p>
+              High-accuracy machining for moulds, press tools, jigs, and
+              fixtures across industries.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-industry fa-2x"></i>
+            <h4>Production Manufacturing</h4>
+            <p>
+              From small-batch runs to bulk orders, we ensure consistency and
+              reliability.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-tools fa-2x"></i>
+            <h4>Tool & Die Making</h4>
+            <p>
+              Custom dies, moulds, and tooling solutions engineered for
+              durability and precision.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-check-circle fa-2x"></i>
+            <h4>Quality Inspection</h4>
+            <p>
+              Stringent quality checks with advanced measuring instruments to
+              ensure accuracy.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-headset fa-2x"></i>
+            <h4>After-Sales Support</h4>
+            <p>
+              Maintenance, modifications, and lifetime technical support for all
+              delivered tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero2" id="project">
+      <div class="hero-content2">
+        <h1>
+          The Future of VMC Manufacturing with <br />
+          <span class="highlight2">Cutting-Edge Technology</span>
+        </h1>
+        <p>
+          Chandhan Technology delivers precision, reliability, and efficiency —
+          empowering industries with world-class VMC milling & drilling
+          solutions.
+        </p>
+
+        <div class="buttons2">
+          <a href="#services" class="btn2 primary2">Get Started</a>
+          <a href="#contact" class="btn2 secondary2">Request a Quote</a>
+        </div>
+
+        <div class="rating2">
+          ⭐⭐⭐⭐⭐ <span>5.0</span>
+          <p>Trusted by 100+ <a href="#clients">manufacturers worldwide</a></p>
+        </div>
+      </div>
+
+      <div class="hero-stats2">
+        <div class="stat2">
+          <img src="img/13190.jpg" alt="CNC Projects" />
+        </div>
+
+        <div class="stat2 blue2">
+          <h2>100+</h2>
+          <p>Esteemed Clients & Partners</p>
+        </div>
+
+        <div class="stat2 green2">
+          <h2>1950+</h2>
+          <p>
+            Total VMC Projects <br /><small>Growth of 120+ this year</small>
+          </p>
+        </div>
+
+        <div class="stat2 lightgreen2">
+          <h2>6+</h2>
+          <p>Years of VMC Milling, Drilling & Wire-EDM Expertise</p>
+        </div>
+
+        <div class="stat2 blue2">
+          <p>
+            Achieve Precision Engineering <br />
+            and Boost Productivity with Chandhan Tech.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="process-container">
+        <h5 class="sub-heading">Process</h5>
+        <h2 class="main-heading">Here's how we work</h2>
+        <p class="process-intro">
+          From design consultation to final delivery — our process ensures
+          precision, efficiency, and quality in every project.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-block-left">
+            <div class="timeline-content">
+              <span class="step-number">01.</span>
+              <h3>Requirement Analysis</h3>
+              <p>
+                We study your part drawings, CAD models, and specifications to
+                understand functionality and production needs.
+              </p>
+            </div>
+            <div class="timeline-img">
+              <img
+                src="img/process/production-electronic-components-high-tech-factory.jpg"
+                alt="Requirement Analysis"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-content">
+              <span class="step-number">02.</span>
+              <h3>Custom Quote</h3>
+              <p>
+                A detailed proposal with tooling specs, machining process,
+                timeline, and competitive pricing is shared.
+              </p>
+            </div>
+            <div class="timeline-img">
+              <img
+                src="img/process/row-equipment-producing-metal-parts-works-photo-with-depth-field.jpg"
+                alt="Custom Quote"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-block-left">
+            <div class="timeline-content">
+              <span class="step-number">03.</span>
+              <h3>Manufacturing & Assembly</h3>
+              <p>
+                Our expert team manufactures the tools and fixtures with CNC
+                precision, followed by assembly and quality checks.
+              </p>
+            </div>
+            <div class="timeline-img">
+              <img
+                src="img/process/serious-man-protective-glasses-helmet-keeping-folder.jpg"
+                alt="Manufacturing & Assembly"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-content">
+              <span class="step-number">04.</span>
+              <h3>Delivery & Support</h3>
+              <p>
+                We deliver fully tested tools with documentation, and provide
+                long-term technical support for your production line.
+              </p>
+            </div>
+            <div class="timeline-img">
+              <img src="img/19820.jpg" alt="Delivery & Support" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-hero" id="services">
+      <div class="service-hero-content">
+        <h2>We Have<br /><span> The Best</span></h2>
+        <h1 class="bg-text">Expertise</h1>
+      </div>
+      <section class="expertise">
+        <div class="expert-container">
+          <div class="expertise-grid">
+            <div class="expert-box">
+              <img
+                src="img/process/man-working-steel-fatory-equipment-steel-production (1).jpg"
+                alt="Planning"
+              />
+              <h4>Planning</h4>
+              <p>
+                Requirement analysis, CAD study, and strip layout design for
+                precision tooling projects.
+              </p>
+            </div>
+
+            <div class="expert-box">
+              <img
+                src="img/process/man-working-steel-fatory-equipment-steel-production.jpg"
+                alt="Design"
+              />
+              <h4>Custom Tooling Design</h4>
+              <p>
+                Engineered moulds, press tools, jigs & fixtures built for
+                durability and accuracy.
+              </p>
+            </div>
+
+            <div class="expert-box">
+              <img
+                src="img/process/man-working-steel-fatory-equipment-steel-production (2).jpg"
+                alt="Delivery"
+              />
+              <h4>Manufacturing & Delivery</h4>
+              <p>
+                On-time execution with CNC machining, assembly, testing, and
+                quality certification.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="cnc-awareness-section">
+  <div class="awareness-container">
+    <div class="awareness-text">
+      <h2>
+        The more familiar a
+        <span class="highlight">client is with your machining expertise</span>,
+        the more likely they are to trust and collaborate
+      </h2>
+      <p>
+        A strong manufacturing presence builds credibility, sets you apart in the 
+        industry, and helps secure long-term partnerships based on precision and 
+        reliability.
+      </p>
+      <a
+        href="https://wa.me/9353990066?text=Hello%20Chandhan%20Technology%2C%20I%20am%20interested%20in%20your%20VMC%20milling%20and%20drilling%20services."
+        class="btn-primary"
+        >Get a Free Quote</a>
+    </div>
+
+    <div class="awareness-image">
+      <img
+        src="all-img/360_F_580369403_KYpmHr20OoFIf5x3CrznliNbKuulNQlY.jpg"
+        alt="Machining Services"
+      />
+      <div class="counter-box">
+        <i class="fas fa-cube"></i>
+        <span><strong>367</strong> Precision Components Delivered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cnc-services-section">
+  <div class="services-header">
+    <h3>What We Do for Your Manufacturing Business</h3>
+    <p>
+      From high-precision milling and drilling to tool-making and fixtures, 
+      we provide complete machining solutions that help industries improve 
+      performance and product quality.
+    </p>
+    <a href="services.html" class="learn-more">
+      Learn more <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon-box"><i class="fas fa-drafting-compass"></i></div>
+      <h4>Precision Engineering</h4>
+      <p>
+        We manufacture press tools, moulds, jigs, fixtures, and precision 
+        components with outstanding accuracy and durability.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box"><i class="fas fa-cogs"></i></div>
+      <h4>Milling & Drilling Solutions</h4>
+      <p>
+        High-performance milling and drilling for prototypes and production parts, 
+        ensuring consistency, efficiency, and exceptional surface finish.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="testimonial-section">
+      <p class="section-label">Testimonials</p>
+      <h2 class="section-title">
+        What <span class="highlight-blue">Our Clients</span> Say
+        <span class="highlight-blue">About Us</span>
+      </h2>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Ramesh Kumar"></div>
+            <h4>Ramesh Kumar</h4>
+            <p>
+              "Chandhan Technology delivers exceptional VMC milling quality.
+              Every part matches tolerance perfectly and always arrives on
+              time."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Imran Shaikh"></div>
+            <h4>Imran Shaikh</h4>
+            <p>
+              "Their team supported us with rapid prototyping and bulk
+              machining. Reliable, fast, and highly professional."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Nikita Sharma"></div>
+            <h4>Nikita Sharma</h4>
+            <p>
+              "Their precision in drilling and tooling helped streamline our
+              assembly line. Highly satisfied with the quality."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Lakshmanan"></div>
+            <h4>Lakshmanan</h4>
+            <p>
+              "A dependable partner for custom machining jobs. Their technical
+              support is one of the best we've worked with."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Anand Patel"></div>
+            <h4>Anand Patel</h4>
+            <p>
+              "We trust Chandhan Technology for all our CNC and VMC machining
+              needs. Superior precision and excellent delivery commitment."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <!-- Duplicate cards for loop -->
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Ramesh Kumar"></div>
+            <h4>Ramesh Kumar</h4>
+            <p>
+              "Chandhan Technology delivers exceptional VMC milling quality.
+              Every part matches tolerance perfectly and always arrives on
+              time."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Ramesh Kumar"></div>
+            <h4>Ramesh Kumar</h4>
+            <p>
+              "Chandhan Technology delivers exceptional VMC milling quality.
+              Every part matches tolerance perfectly and always arrives on
+              time."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Imran Shaikh"></div>
+            <h4>Imran Shaikh</h4>
+            <p>
+              "Their team supported us with rapid prototyping and bulk
+              machining. Reliable, fast, and highly professional."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Nikita Sharma"></div>
+            <h4>Nikita Sharma</h4>
+            <p>
+              "Their precision in drilling and tooling helped streamline our
+              assembly line. Highly satisfied with the quality."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Lakshmanan"></div>
+            <h4>Lakshmanan</h4>
+            <p>
+              "A dependable partner for custom machining jobs. Their technical
+              support is one of the best we've worked with."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Anand Patel"></div>
+            <h4>Anand Patel</h4>
+            <p>
+              "We trust Chandhan Technology for all our CNC and VMC machining
+              needs. Superior precision and excellent delivery commitment."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <!-- Duplicate for smooth scroll -->
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Ramesh Kumar"></div>
+            <h4>Ramesh Kumar</h4>
+            <p>
+              "Chandhan Technology delivers exceptional VMC milling quality.
+              Every part matches tolerance perfectly and always arrives on
+              time."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="avatar" data-name="Imran Shaikh"></div>
+            <h4>Imran Shaikh</h4>
+            <p>
+              "Their team supported us with rapid prototyping and bulk
+              machining. Reliable, fast, and highly professional."
+            </p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left Column -->
+    <div class="footer-brand">
+      <img
+        src="logo/CHANDAN_TECHNOLOGY-removebg-preview.png"
+        alt="Chandhan Technology Logo"
+        class="logo"
+      />
+      <p>
+        Chandhan Technology specializes in high-precision VMC milling, drilling,
+        Wire EDM, and tooling solutions. Delivering accuracy, innovation, and reliability
+        for modern manufacturing industries.
+      </p>
+    </div>
+
+    <!-- Quick Menu -->
+    <div class="footer-links">
+      <h4>Quick Menu</h4>
+      <ul>
+        <li><a href="services.html">VMC Milling & Drilling</a></li>
+        <li><a href="precision.html">VMC Drilling</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="contact.html">Get a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-links">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">FAQs</a></li>
+        <li><a href="contact.html">Quality Policy</a></li>
+        <li><a href="contact.html">Certifications</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+     
+        <a href="#" title="Facebook" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" title="Instagram" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a 
+          href="https://wa.me/9353990066?text=Hello%20Chandhan%20Technology%2C%20I%20am%20interested%20in%20your%20VMC%20solutions."
+          target="_blank" 
+          rel="noopener"
+          title="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="footer-contact">
+      <p>
+        <a
+          href="https://www.google.com/maps?q=No+26,+8th+Cross,+Chamundeshwari+Nagar,+Rajgopal+Nagar+Main+Road,+Peenya+2nd+Stage,+Bengaluru+560058"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fas fa-map-marker-alt"></i>
+          No 26, 8th Cross, Chamundeshwari Nagar, Rajgopal Nagar Main Road,  
+          Peenya 2nd Stage, Bengaluru – 560058
+        </a>
+      </p>
+
+      <p>
+        <a href="tel:+9353990066">
+          <i class="fas fa-phone-alt"></i> +91 93539 90066
+        </a>
+      </p>
+
+      <p>
+        <a href="tel:+8197636028">
+          <i class="fas fa-phone-alt"></i> +91 81976 36028
+        </a>
+      </p>
+
+      <p>
+        <a href="mailto:info@chandantechnology.com" target="_blank" rel="noopener">
+          <i class="fas fa-envelope"></i> info@chandantechnology.com
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright 2025. Chandhan Technology. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+
+    <script>
+      /* Generate initials for avatars */
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".avatar[data-name]").forEach((el) => {
+          const name = el.getAttribute("data-name").trim().split(" ");
+          const initials =
+            name.length > 1
+              ? name[0][0] + name[name.length - 1][0]
+              : name[0][0];
+          el.textContent = initials.toUpperCase();
+        });
+      });
+    </script>
+
+    <script>
+      // Hero slide animation disabled - title and content remain static
+
+      // add 'nav-loaded' to body so desktop nav fade-in/stagger runs
+      document.addEventListener("DOMContentLoaded", function () {
+        // small delay for smoother effect
+        setTimeout(function () {
+          document.body.classList.add("nav-loaded");
+        }, 80);
+      });
+
+      // Fade-up animation for trusted section
+      document.addEventListener("DOMContentLoaded", function () {
+        const trustedSection = document.querySelector(".trusted");
+        if (!trustedSection) return;
+        trustedSection.style.opacity = 0;
+        trustedSection.style.transform = "translateY(32px)";
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              trustedSection.style.animation =
+                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
+              trustedSection.style.animationDelay = "0.2s";
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(trustedSection);
+      });
+
+      // Fade-up animation for hero2 section
+      document.addEventListener("DOMContentLoaded", function () {
+        const hero2Section = document.querySelector(".hero2");
+        if (!hero2Section) return;
+        hero2Section.style.opacity = 0;
+        hero2Section.style.transform = "translateY(32px)";
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              hero2Section.style.animation =
+                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
+              hero2Section.style.animationDelay = "0.2s";
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(hero2Section);
+      });
+
+      // Fade-up animation for expertise section
+      document.addEventListener("DOMContentLoaded", function () {
+        const expertiseSection = document.querySelector(".expertise");
+        if (!expertiseSection) return;
+        expertiseSection.style.opacity = 0;
+        expertiseSection.style.transform = "translateY(32px)";
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              expertiseSection.style.animation =
+                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
+              expertiseSection.style.animationDelay = "0.2s";
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(expertiseSection);
+      });
+
+      // Fade-up animation for cnc-awareness-section
+      document.addEventListener("DOMContentLoaded", function () {
+        const awarenessSection = document.querySelector(
+          ".cnc-awareness-section"
+        );
+        if (!awarenessSection) return;
+        awarenessSection.style.opacity = 0;
+        awarenessSection.style.transform = "translateY(32px)";
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              awarenessSection.style.animation =
+                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
+              awarenessSection.style.animationDelay = "0.2s";
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(awarenessSection);
+      });
+
+      // Fade-up animation for cnc-services-section
+      document.addEventListener("DOMContentLoaded", function () {
+        const cncServicesSection = document.querySelector(
+          ".cnc-services-section"
+        );
+        if (!cncServicesSection) return;
+        cncServicesSection.style.opacity = 0;
+        cncServicesSection.style.transform = "translateY(32px)";
+        const observer = new IntersectionObserver(
+          function (entries) {
+            if (entries[0].isIntersecting) {
+              cncServicesSection.style.animation =
+                "fadeUp 0.8s cubic-bezier(.2,.9,.2,1) forwards";
+              cncServicesSection.style.animationDelay = "0.2s";
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(cncServicesSection);
+      });
+    </script>
+
+    <!-- heaing -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Service Hero h2 animation
+        const serviceHeroH2 = document.querySelector(
+          ".service-hero-content h2"
+        );
+        if (serviceHeroH2) {
+          // Split text into spans if not already done
+          if (!serviceHeroH2.querySelector("span.letter")) {
+            const html = serviceHeroH2.innerHTML;
+            // Split by <br> and animate each line
+            serviceHeroH2.innerHTML = "";
+            html.split("<br>").forEach((line, lineIdx) => {
+              if (lineIdx > 0)
+                serviceHeroH2.appendChild(document.createElement("br"));
+              line
+                .replace(/<[^>]+>/g, "")
+                .split("")
+                .forEach((char, i) => {
+                  const span = document.createElement("span");
+                  span.className = "letter";
+                  span.textContent = char === " " ? "\u00A0" : char;
+                  serviceHeroH2.appendChild(span);
+                });
+            });
+          }
+          serviceHeroH2.querySelectorAll("span.letter").forEach((span) => {
+            span.style.opacity = 0;
+            span.style.transform = "translateY(-30px)";
+            span.style.animation = "none";
+          });
+          const observerH2 = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                serviceHeroH2
+                  .querySelectorAll("span.letter")
+                  .forEach((span, i) => {
+                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
+                    span.style.animationDelay = i * 0.06 + "s";
+                  });
+              }
+            },
+            { threshold: 0.5 }
+          );
+          observerH2.observe(serviceHeroH2);
+        }
+
+        // Service Hero h1 animation
+        const serviceHeroH1 = document.querySelector(
+          ".service-hero-content h1"
+        );
+        if (serviceHeroH1) {
+          if (!serviceHeroH1.querySelector("span.letter")) {
+            const text = serviceHeroH1.textContent;
+            serviceHeroH1.innerHTML = "";
+            text.split("").forEach((char) => {
+              const span = document.createElement("span");
+              span.className = "letter";
+              span.textContent = char === " " ? "\u00A0" : char;
+              serviceHeroH1.appendChild(span);
+            });
+          }
+          serviceHeroH1.querySelectorAll("span.letter").forEach((span) => {
+            span.style.opacity = 0;
+            span.style.transform = "translateY(-30px)";
+            span.style.animation = "none";
+          });
+          const observerH1 = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                serviceHeroH1
+                  .querySelectorAll("span.letter")
+                  .forEach((span, i) => {
+                    span.style.animation = "fadeInUp 0.6s ease-out forwards";
+                    span.style.animationDelay = i * 0.06 + "s";
+                  });
+              }
+            },
+            { threshold: 0.5 }
+          );
+          observerH1.observe(serviceHeroH1);
+        }
+      });
+
+      // Count animation for hero-stats2 numbers
+      document.addEventListener("DOMContentLoaded", function () {
+        function animateCount(el, target, duration = 1200) {
+          let start = 0;
+          let startTime = null;
+          target = parseInt(target, 10) || 0;
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            const progress = Math.min((ts - startTime) / duration, 1);
+            el.textContent = Math.floor(progress * (target - start) + start);
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            } else {
+              el.textContent = target;
+            }
+          }
+          requestAnimationFrame(step);
+        }
+
+        // Animate all .stat2 h2 numbers when .hero-stats2 enters viewport
+        const statsSection = document.querySelector(".hero-stats2");
+        if (statsSection) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              if (entries[0].isIntersecting) {
+                statsSection
+                  .querySelectorAll(".stat2 h2")
+                  .forEach(function (h2) {
+                    // extract digits only (handles "1950+" or "1,950+")
+                    const target = h2.textContent.replace(/[^0-9]/g, "");
+                    if (target) animateCount(h2, target);
+                  });
+                observer.disconnect();
+              }
+            },
+            { threshold: 0.3 }
+          );
+          observer.observe(statsSection);
+        }
+      });
+    </script>
+  </body>
+</html>
