@@ -712,7 +712,11 @@ a {
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
-
+.quick-facts {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
 .btn {
   background-color: #007bff;
   color: #fff;
@@ -720,6 +724,7 @@ a {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .abtright-content {

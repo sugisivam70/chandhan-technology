@@ -461,6 +461,259 @@
         grid-row: span 1;
       }
     }
+
+    /* Enquiry Section */
+    .enquiry-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      font-family: "poppins", sans-serif;
+    }
+
+    .enquiry-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .enquiry-left {
+      position: relative;
+    }
+
+    .contact-image {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      min-height: 400px;
+      object-fit: cover;
+    }
+
+    .contact-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .contact-overlay h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .contact-icons {
+      display: flex;
+      gap: 20px;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .contact-icons i {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .contact-icons i:hover {
+      background: rgba(255, 217, 0, 0.3);
+      transform: scale(1.1);
+    }
+
+    .enquiry-right {
+      padding: 40px;
+      background: #f9f9f9;
+      border-radius: 12px;
+    }
+
+    .enquiry-right h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 5px;
+    }
+
+    .enquiry-subtitle {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .enquiry-form {
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-family: "poppins", sans-serif;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      font-family: "poppins", sans-serif;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px 20px;
+      background: #ff8c00;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: "poppins", sans-serif;
+    }
+
+    .submit-btn:hover {
+      background: #e67e00;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+
+    .info-link {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s;
+    }
+
+    .info-link i {
+      color: #ff8c00;
+    }
+
+    .info-link:hover {
+      color: #ff8c00;
+      transform: translateX(5px);
+    }
+
+    /* Map Section */
+    .map-section {
+      padding: 60px 20px;
+      background: #f5f5f5;
+    }
+
+    .map-container {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-container iframe {
+      border: none;
+    }
+
+    .address-info {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .address-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .address-box h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 15px;
+    }
+
+    .address-box p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.8;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .address-box i {
+      color: #ff8c00;
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .enquiry-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .enquiry-right {
+        padding: 30px;
+      }
+
+      .enquiry-right h2 {
+        font-size: 1.5rem;
+      }
+
+      .contact-image img {
+        min-height: 300px;
+      }
+
+      .map-container iframe {
+        height: 350px !important;
+      }
+
+      .address-box {
+        padding: 20px;
+      }
+    }
   </style>
   <body>
     <header class="navbar">
@@ -472,10 +725,10 @@
       </button>
       <nav class="nav-links">
         <a href="home.html">Home</a>
-        <a href="about.html">Our Machines</a>
+        <a href="ourmachine.html">Our Machines</a>
         <a href="contact.html">Contact</a>
         <a
-          href="https://wa.me/8123638613?text=Hi%20Genius%20Tech!%20I%20am%20interested%20in%20your%20VMC%20solutions. Can%20you%20provide%20more%20details?"
+          href="https://wa.me/8123638613?text=Hi%20Chandhan%20Technology!%20I%20am%20interested%20in%20your%20VMC%20solutions. Can%20you%20provide%20more%20details?"
           class="btn-yellow"
           >Enquiry ➜</a
         >
@@ -484,172 +737,77 @@
 
     <section class="service-hero" id="services">
       <div class="service-hero-content">
-        <h2>Our <br /><span></span></h2>
-        <h1 class="bg-text">Machines</h1>
+        <h2>For <br /><span></span></h2>
+        <h1 class="bg-text">Contact</h1>
       </div>
     </section>
 
-    <!-- Hero Section -->
-
-
-    <section class="machine-sec">
-      <h2>Explore the Machines</h2>
-      <div class="machine-grid">
-        <!-- Product 1 -->
-
-        <!-- Product 3 -->
-
-        <!-- Product 4 -->
-       <div class="machine-card">
-          <img
-            src="machine img/maxresdefault (1).jpg"
-            alt="STM 850 Vertical Machining Center"
-          />
-
-          <div class="machine-info">
-            <h3>STM 850 Vertical Machining Center</h3>
-            <ul>
-              <li>High-performance CNC machine used in die & mold making, aerospace, and automotive industries</li>
-              <li>Robust 'A' shaped column with multiple cross ribs offers high cutting performance and excellent stability</li>
-              <li>Equipped with high-precision **LM Roller Guideways** on all three axes for enhanced dynamics and longer machine life</li>
-              <li>Features an imported spindle from Taiwan with a G1 balanced grade for a superior surface finish</li>
-              <li>High efficiency ensured with rapid feed rates of up to 36 m/min</li>
-              <li>CNC Controller options available, including the advanced Mitsubishi M80</li>
-              <li>Table size of **1000 x 500 mm** with a maximum load capacity of up to **800 kg**</li>
-            </ul>
-          </div>
-
-          
-        </div>
-
-        <div class="machine-card">
-          <img src="machine img/hq720.jpg" alt="STM 1050 VMC Machine" />
-
-          <div class="machine-info">
-            <h3>STM VL/VD 1050 Vertical Machining Center</h3>
-            <ul>
-              <li>
-                Standard vertical machining center (VMC) for general purpose milling
-              </li>
-              <li>Spindle speeds up to 8,000 RPM (belt type standard)</li>
-              <li>
-                Equipped with a spacious table size of 1200 x 600 mm
-              </li>
-              <li>
-                Table load capacity typically up to 1,000 kgs
-              </li>
-              <li>
-                Suitable for various sectors including general engineering, automotive, and mold making
-              </li>
-              <li>Manufacturer: S&T Machinery (STM)</li>
-            </ul>
-          </div>
-</div>
-
-
-
-        <div class="machine-card">
-          <img src="machine img/Omega-1.png" alt="BFW Omega 3050 VMC Machine" />
-
-          <div class="machine-info">
-            <h3>BFW Omega 3050 High-Speed VMC</h3>
-            <ul>
-              <li>
-                High-speed vertical machining center (VMC) for precision milling
-              </li>
-              <li>Spindle speeds up to 24,000 RPM (optional), 12,000 RPM standard</li>
-              <li>
-                Equipped with high rapid traverse rates of up to 60 m/min in X/Y axes and 48 m/min in Z-axis
-              </li>
-              <li>
-                Designed for high productivity with a fast tool change time of 1.4 seconds
-              </li>
-              <li>
-                Suitable for various sectors including electronics, automotive, and aerospace
-              </li>
-              <li>Manufacturer: Bharat Fritz Werner (BFW)</li>
-            </ul>
-          </div>
-
-      
-
-
-
-        <!-- Product 5 -->
-      </div>
-    </section>
-
-    <section class="work-section">
-      <div class="work-header">
-        <h2>Shaping <span>Innovation with Precision</span></h2>
-        <p>
-          At Genius Tech, we specialize in delivering world-class VMC machining
-          solutions, ensuring accuracy, reliability, and efficiency for every
-          project we undertake.
-        </p>
-      </div>
-
-      <div class="work-grid">
-        <!-- Card 1 -->
-        <div class="work-card">
-          <img
-            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_08ed03c7.jpg"
-            alt="VMC Milling"
-          />
-          <div class="work-info">
-            <span class="tag">Milling</span>
-            <h3>High-Accuracy VMC Milling</h3>
+    <!-- Enquiry Section -->
+    <section class="enquiry-section">
+      <div class="enquiry-container">
+        <!-- Left Side - Contact Image & Info -->
+        <div class="enquiry-left">
+          <div class="contact-image">
+            <img src="img/contact/contact-hero.jpg" alt="Contact Us" />
+            <div class="contact-overlay">
+              <h3>CONTACT US</h3>
+              <div class="contact-icons">
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-wifi"></i>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="work-card">
-          <img
-            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.32_40c1f467.jpg"
-            alt="VMC Turning"
-          />
-          <div class="work-info">
-            <span class="tag">Turning</span>
-            <h3>Efficient VMC Turning Operations</h3>
-          </div>
-        </div>
+        <!-- Right Side - Form -->
+        <div class="enquiry-right">
+          <h2>Contact Us</h2>
+          <p class="enquiry-subtitle">Call us or book an Appointment</p>
 
-        <!-- Card 3 -->
-        <div class="work-card large">
-          <img
-            src="img/abt/WhatsApp Image 2025-09-24 at 13.16.33_42b42982.jpg"
-            alt="Assembly Solutions"
-          />
-          <div class="work-info">
-            <button class="cta-btn">Start Your Project</button>
-          </div>
-        </div>
+          <form class="enquiry-form" id="enquiryForm">
+            <div class="form-group">
+              <input type="text" placeholder="Name" name="name" required />
+            </div>
 
-        <!-- Card 4 -->
-        <div class="work-card">
-          <img
-            src="img/abt/metal-industry-workshop-precision-machinery-automated-production-line-robotic-arm-generated-by-ai-free-photo.jpg"
-            alt="Quality Assurance"
-          />
-          <div class="work-info">
-            <span class="tag">Quality</span>
-            <h3>Rigorous Quality Control & Inspection</h3>
-          </div>
-        </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
 
-        <!-- Card 5 -->
-        <div class="work-card wide">
-          <img
-            src="img/abt/automotive-parts-manufacturing-canada-with-precision-engineering-processes_1291600-47172.jpg"
-            alt="VMC Innovation"
-          />
-          <div class="work-info">
-            <span class="tag">Innovation</span>
-            <h3>Driving Tomorrow’s Manufacturing Technology</h3>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="How can we help?"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+
+          <div class="contact-info">
+            <a href="mailto:info@chandantechnology.com" class="info-link">
+              <i class="fas fa-envelope"></i>
+              info@chandantechnology.com
+            </a>
+            <a href="tel:+919353990066" class="info-link">
+              <i class="fas fa-phone"></i>
+              +91 9353990066
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Map Section -->
+   
 
     <footer class="footer">
       <div class="footer-container">
@@ -719,8 +877,8 @@
               rel="noopener"
             >
               <i class="fas fa-map-marker-alt"></i>
-              No 26, 8th Cross, Chamundeshwari Nagar, Rajgopal Nagar Main Road,
-              Peenya 2nd Stage, Bengaluru – 560058
+              Chandhan Technology, No 26, 8th Cross, Chamundeshwari Nagar,
+              Rajgopal Nagar Main Road, Peenya 2nd Stage, Bengaluru – 560058
             </a>
           </p>
 
@@ -890,6 +1048,49 @@
       });
 
       // ...existing code...
+    </script>
+
+    <script>
+      // Enquiry Form Submission
+      document.addEventListener("DOMContentLoaded", function () {
+        const enquiryForm = document.getElementById("enquiryForm");
+        if (enquiryForm) {
+          enquiryForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const formData = new FormData(this);
+            const data = {
+              name: formData.get("name"),
+              email: formData.get("email"),
+              phone: formData.get("phone"),
+              message: formData.get("message"),
+            };
+
+            // Create mailto link
+            const subject = `New Enquiry from ${data.name}`;
+            const body = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+
+Message:
+${data.message}
+            `;
+
+            // Send email using mailto (opens email client)
+            window.location.href = `mailto:info@chandantechnology.com?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`;
+
+            // Optional: Show success message
+            alert("Thank you for your enquiry! Opening email client...");
+
+            // Reset form
+            this.reset();
+          });
+        }
+      });
     </script>
   </body>
 </html>
