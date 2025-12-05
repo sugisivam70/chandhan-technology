@@ -567,7 +567,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: flex-start;
+  ;
 }
 
 .about-section h1 {
@@ -612,7 +612,7 @@ a {
   gap: 20px;
   flex: 1;
   min-width: 300px;
-  order: 2;
+  order: 4;
   margin: 0;
 }
 
