@@ -225,10 +225,12 @@ nav a.active {
   font-size: 4rem;
   font-weight: 600;
   color: #ffffff;
+  padding: 0;
 }
 
 .hero-left h1 span {
   color: #ffcc00;
+  padding: 0;
 }
 
 .hero-left .tagline {
