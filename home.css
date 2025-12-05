@@ -567,7 +567,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  ;
+  align-items: flex-start;
 }
 
 .about-section h1 {
@@ -578,6 +578,7 @@ a {
   font-weight: 600;
   color: #02073d;
   font-family: "Poppins", sans-serif;
+  order: 3;
 }
 
 .intro {
@@ -612,7 +613,7 @@ a {
   gap: 20px;
   flex: 1;
   min-width: 300px;
-  order: 1;
+  order: 2;
   margin: 0;
 }
 
@@ -631,7 +632,7 @@ a {
   margin-top: 30px;
   font-family: "Poppins", sans-serif;
   flex-basis: 100%;
-  order: 3;
+  order: 4;
 }
 
 .highlight {
@@ -694,6 +695,8 @@ a {
   justify-content: space-between;
   max-width: 1200px;
   font-family: "poppins", sans-serif;
+  flex-basis: 100%;
+  order: 5;
 }
 
 .abtleft-content {
