@@ -578,7 +578,7 @@ a {
   font-weight: 600;
   color: #02073d;
   font-family: "Poppins", sans-serif;
-  order: 3;
+  order: 1;
 }
 
 .intro {
@@ -588,7 +588,7 @@ a {
   gap: 20px;
   flex: 1;
   min-width: 300px;
-  order: 1;
+  order: 2;
 }
 
 .intro p {
@@ -613,7 +613,7 @@ a {
   gap: 20px;
   flex: 1;
   min-width: 300px;
-  order: 2;
+  order: 3;
   margin: 0;
 }
 
