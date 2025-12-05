@@ -2083,6 +2083,15 @@ a {
   height: 150px;
 }
 
+    @media (max-width: 446px) {
+      
+      .service-hero-content h2 {
+        font-size: 28px;
+      }
+      .bg-text {
+        font-size: 60px;
+      }
+    }
 .footer-brand p {
   color: #555;
   font-size: 14px;
