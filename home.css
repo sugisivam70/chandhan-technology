@@ -565,7 +565,8 @@ a {
   border-radius: 15px;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 30px;
   align-items: flex-start;
 }
@@ -585,8 +586,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-  flex: 1;
-  min-width: 300px;
+  width: 100%;
   order: 1;
 }
 
@@ -610,9 +610,8 @@ a {
 .about-images {
   display: flex;
   gap: 20px;
-  flex: 1;
-  min-width: 300px;
-  order: 2;
+  width: 100%;
+  order: 3;
   margin: 0;
 }
 
@@ -630,8 +629,8 @@ a {
   color: #333;
   margin-top: 30px;
   font-family: "Poppins", sans-serif;
-  flex-basis: 100%;
-  order: 3;
+  width: 100%;
+  order: 4;
 }
 
 .highlight {
