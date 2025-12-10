@@ -330,9 +330,24 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <video class="bgimg" autoplay loop muted>
+      <!-- Video: provide multiple sources and playsinline for iPhone compatibility -->
+      <video
+        class="bgimg"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="hero-vid/hero-poster.jpg"
+      >
         <source src="hero-vid/VN20251204_113353.mp4" type="video/mp4" />
-        Your browser does not support the video tag
+        <source src="hero-vid/VN20251204_113353.webm" type="video/webm" />
+        <!-- Fallback content: show static image and link to download/ view video if unsupported -->
+        Your browser does not support the video tag.
+        <img
+          src="hero-vid/VN20251204_113353.jpg"
+          alt="Chandhan Technology - hero"
+        />
       </video>
 
       <div class="hero-content">
